@@ -1,36 +1,76 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+📖 About the Project
+BazaarDor (বাজারদর) is a market-price web application designed to
+make product and market information easier to explore. It provides
+category-based browsing, product details, market price comparisons, and
+a user authentication experience.
 
-## Getting Started
+The interface is designed with Bangla-speaking users in mind, including
+Bangla labels and date display. Authenticated users can manage their
+profile and upload a profile picture stored on Cloudinary.
+✨ Features
+- 📊 Market Price Information --- Explore product prices and
+  available market information.
+- 🔎 Product Browsing --- Browse products and open individual
+  product detail pages.
+- 🗂️ Category Navigation --- Navigate product categories using a
+  dedicated category menu.
+- 📈 Price Change Details --- Display today, previous-day, and
+  previous-week prices when supplied by the API.
+- 🌐 Bangla-Friendly Interface --- Bangla labels and Bangla date
+  display alongside English date information.
+- 🔐 User Authentication --- Sign up, sign in, and sign out using
+  Better Auth.
+- 🔑 Social Sign-In --- Google and GitHub sign-in, when provider
+  credentials are configured.
+- 👤 Editable User Profile --- Update a user's name and profile
+  picture.
+- ☁️ Cloudinary Image Uploads --- Upload profile pictures and
+  store their secure Cloudinary URLs.
+- 📱 Responsive Layout --- A responsive navigation and page layout
+  for different screen sizes.
+- 🔔 User Feedback --- Toast notifications for important actions
+  and errors.
+- 🛡️ Form Validation --- Client-side checks for profile names and
+  profile-image file type and size.
+Note: Live market data, price-history fields, and social sign-in
+depend on the configured API and provider credentials.
 
-First, run the development server:
+🧰 Technology Stack
+  Technology                                             Purpose
+  Next.js                         React framework, routing, and
+                                                         application pages
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+  React                            Component-based user interface
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+  TypeScript          Type safety
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+  Tailwind CSS               Utility-first styling
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+  DaisyUI                        UI styling utilities and component
+                                                         classes
 
-## Learn More
+  HeroUI                      UI components such as buttons
 
-To learn more about Next.js, take a look at the following resources:
+  Better Auth            Authentication and session
+                                                         management
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+  MongoDB                    User and application data storage
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+  Cloudinary                  Profile-picture storage and image
+                                                         delivery
 
-## Deploy on Vercel
+  React                                                 Toast notifications
+  Toastify   
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+  Lucide                          Icons, where used
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+  Market Data API                                        Product, category, and market-price
+                                                     data
+🚀 Getting Started
+1. Requirements
+Install the following before starting:
+- Node.js (a current supported LTS version is recommended)
+- npm
+- A MongoDB database
+- A Cloudinary account for profile-image uploads
+- API credentials for any enabled social sign-in providers
