@@ -46,8 +46,7 @@ depend on the configured API and provider credentials.
 
   Tailwind CSS               Utility-first styling
 
-  DaisyUI                        UI styling utilities and component
-                                                         classes
+  
 
   HeroUI                      UI components such as buttons
 
