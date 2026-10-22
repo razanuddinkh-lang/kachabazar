@@ -1,26 +1,49 @@
+
 @import "tailwindcss";
+@import "@heroui/styles"; 
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --market-green: #163e32;
+  --market-lime: #d9f36a;
+  --market-cream: #f7f8f3;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--market-cream);
+  color: #183b30;
+  margin: 0;
+}
+
+.market-container {
+  width: min(100% - 2rem, 1200px);
+  margin-inline: auto;
+}
+
+.price-up {
+  color: #168447;
+}
+
+.price-down {
+  color: #d43c43;
+}
+
+.price-flat {
+  color: #777777;
+}
+
+::selection {
+  background: var(--market-lime);
+  color: var(--market-green);
+}
+
+
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
 }
