@@ -9,7 +9,7 @@ export default function NotFound() {
         <h1 className="mt-5 text-4xl font-bold text-[#163e32]">
           404 — পৃষ্ঠা পাওয়া যায়নি
         </h1>
-        <p className="mt-4 text-gray-500">
+        <p className="mt-4 text-gray-400">
           আপনি যে পৃষ্ঠাটি খুঁজছেন সেটি এখানে নেই।
         </p>
         <Link href="/"
